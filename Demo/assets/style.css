@@ -1,0 +1,129 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #08ea95 0%, #20C4AE 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo h1{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 120px;
+    font-weight: 700;
+    padding: 0px 0 25px 0;
+}
+
+.g-pass{
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    background: #212121;
+    color: #E9E9E9;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px 0px #20C4AE;
+}
+
+.g-pass .head{
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; 
+    background-image: linear-gradient(135deg, #20C4AE 0%, #08ea95 100%);
+    color: #212121
+}
+
+.g-pass .head .title{
+    line-height: 2.5;
+    font-size: 21px;
+}
+
+.g-pass .content{
+    padding-top: 10px
+}
+
+.g-pass .param{
+    display: block;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 25px;
+    line-height: 1.7
+} 
+
+.g-pass .param label{
+    cursor: pointer;
+    text-transform:capitalize;
+    float: left;
+    font-size: 17px;
+}
+
+.g-pass .param label:hover{
+    text-decoration: underline;
+}
+
+.g-pass .param input{
+    float: right;
+    cursor: pointer;
+}
+
+.g-pass .param input.length{
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: right;
+    font-family: "Source sans pro";
+    outline: none;
+}
+
+.g-pass .result{
+    display: block;
+    height: 120px;
+    clear: both;
+    text-align: center;
+    padding: 25px;
+}
+
+.g-pass .result .generated{
+    font-size: 17px;
+    height: 40px;
+    background: #EFEFEF;
+    color: #121212;
+    border-radius: 3px;
+    line-height: 2.4;
+    overflow: hidden;
+}
+
+.g-pass .result button{
+   display: block;
+   margin: 0 auto;
+   margin-top: 10px;
+   font-size: 14px;
+   padding: 7px 40px;
+   font-family: "Source sans pro";
+   text-transform: uppercase;
+   font-weight: 700;
+   background: linear-gradient(135deg, #0da591 0%, #08ea95 100%);
+   border-radius: 3px;
+   border: none;
+   cursor: pointer;
+   color: #111;
+   transition: all 250ms ease;
+   opacity:5
+}
+
+.g-pass .result button:hover{
+   opacity: 1
+}
