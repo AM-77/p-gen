@@ -1,5 +1,3 @@
-
-
 *{
     padding: 0;
     margin: 0;
@@ -12,12 +10,13 @@ body{
     background-image: linear-gradient(135deg, #08ea95 0%, #20C4AE 100%);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 30px;
 }
 
 .logo h1{
     text-align: center;
     color: #FFFFFF;
-    font-size: 120px;
+    font-size: 90px;
     font-weight: 700;
     padding: 0px 0 25px 0;
 }
@@ -86,24 +85,43 @@ body{
     text-align: right;
     font-family: "Source sans pro";
     outline: none;
+    border-radius: 3px;
+    border: none;
+    background: #111;
+    color: #20C4AE;
 }
 
 .g-pass .result{
     display: block;
-    height: 120px;
     clear: both;
     text-align: center;
     padding: 25px;
 }
 
-.g-pass .result .generated{
-    font-size: 17px;
+.g-pass .result textarea.generated,
+.g-pass .result textarea.generated_with_chars,
+.g-pass  textarea.chars{
+    font-size: 15px;
     height: 40px;
-    background: #EFEFEF;
-    color: #121212;
+    max-height: 150px;
+    min-height: 40px;
+    min-width: 100%;
+    max-width: 100%;
+    background: #111;
+    color: #EFEFEF;
     border-radius: 3px;
-    line-height: 2.4;
     overflow: hidden;
+    padding: 10px;
+    font-family: "source sans pro";
+    word-wrap: break-word;
+    overflow-y: scroll;
+    border: 2px solid #111;
+    outline:  none;
+}
+
+.g-pass .result textarea.generated:focus,
+.g-pass .result textarea.generated_with_chars:focus{
+    border: 2px solid #0da591
 }
 
 .g-pass .result button{
@@ -127,3 +145,49 @@ body{
 .g-pass .result button:hover{
    opacity: 1
 }
+
+.param input[type="checkbox"]{
+    height: 17px;
+    width: 40px;
+    margin-top: 7px;
+    position: relative;
+    margin-right: 2px;
+}
+
+.param input[type="checkbox"]:before{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #111;
+    border-radius: 10px;
+    transition: all 250ms ease
+}
+
+.param input[type="checkbox"]:after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    background: #555;
+    transition: all 250ms ease forwards
+}
+
+.param input[type="checkbox"]:checked:after{
+    left: calc(100% - 15px);
+    background: linear-gradient(90deg, #5cdead 0%, #0da591 100%);
+}
+
+.param.param_chars {
+    text-align:center;
+    height: auto;
+}
+.param.param_chars label{
+    float: none;
+}
+
