@@ -41,8 +41,28 @@
                     <input id="length" type="number" class="length" min="0" value="12">
                 </div>
                 <div class="result">
-                    <p class="generated">Your Password Here</p>
+                    <textarea class="generated" placeholder="Your Password Here"></textarea>
                     <button class="generate">generate</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="g-pass">
+            <div class="head">
+                <span class="title">Generate Password With Chars</span>
+            </div>
+            <div class="content">
+                <div class="param param_chars">
+                    <label for="chars">Characters To Use</label>
+                    <textarea id="chars" class="chars" placeholder="Your Chars Here"></textarea>
+                </div>
+                <div class="param">
+                    <label for="length_with_chars">password length</label>
+                    <input id="length_with_chars" type="number" class="length" min="0" value="12">
+                </div>
+                <div class="result">
+                    <textarea class="generated_with_chars" placeholder="Your Password Here"></textarea>
+                    <button class="generate_with_chars">generate</button>
                 </div>
             </div>
         </div>
