@@ -38,19 +38,19 @@ let password = pgen.generatePassword(true, true, true, true, 12)
 ### Install the p-gen module
 
 ```bash
-npm i p-gen
+npm i @am-77/p-gen
 ```
 
 **or**
 
 ```bash
-yarn add p-gen
+yarn add @am-77/p-gen
 ```
 
 ###  Use it
 
 ```javascript
-const pGen = require("p-gen")
+const pGen = require("@am-77/p-gen")
 let pgen = new pGen()
 
 let password = pgen.generatePassword(true, true, true, true, 12)

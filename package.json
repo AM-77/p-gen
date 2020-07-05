@@ -1,5 +1,5 @@
 {
-  "name": "p-gen",
+  "name": "@am-77/p-gen",
   "version": "1.0.0",
   "description": "A customizable javascript password generator.",
   "main": "index.js",
