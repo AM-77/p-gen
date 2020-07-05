@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>p-gen</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <h1>p-gen</h1>
+        </div>
+        <div class="wrapper">
+            <div class="g-pass">
+                <div class="head">
+                    <span class="title">Generate Password</span>
+                </div>
+                <div class="content">
+                    <div class="param">
+                        <label for="lowercase">Use lowercase letters</label>
+                        <input id="lowercase" type="checkbox" class="lowercase" checked />
+                    </div>
+                    <div class="param">
+                        <label for="uppercase">Use uppercase letters</label>
+                        <input id="uppercase" type="checkbox" class="uppercase" checked />
+                    </div>
+                    <div class="param">
+                        <label for="numbers">Use numbers</label>
+                        <input id="numbers" type="checkbox" class="numbers" checked />
+                    </div>
+                    <div class="param">
+                        <label for="symbols">Use symbols</label>
+                        <input id="symbols" type="checkbox" class="symbols" checked />
+                    </div>
+                    <div class="param">
+                        <label for="length">password length</label>
+                        <input id="length" type="number" class="length" min="0" value="12">
+                    </div>
+                    <div class="result">
+                        <textarea class="generated" placeholder="Your Password Here"></textarea>
+                        <button class="generate">generate</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="g-pass">
+                <div class="head">
+                    <span class="title">Generate Password With Chars</span>
+                </div>
+                <div class="content">
+                    <div class="param param_chars">
+                        <label for="chars">Characters To Use</label>
+                        <textarea id="chars" class="chars" placeholder="Your Chars Here"></textarea>
+                    </div>
+                    <div class="param">
+                        <label for="length_with_chars">password length</label>
+                        <input id="length_with_chars" type="number" class="length" min="0" value="12">
+                    </div>
+                    <div class="result">
+                        <textarea class="generated_with_chars" placeholder="Your Password Here"></textarea>
+                        <button class="generate_with_chars">generate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/p-gen.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

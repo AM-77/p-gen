@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -7,10 +9,9 @@
 body{
     height: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(135deg, #08ea95 0%, #20C4AE 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #111111;
     padding-bottom: 30px;
+    font-family: Roboto, "Source sans pro", sans-serif;
 }
 
 .logo h1{
@@ -21,6 +22,14 @@ body{
     padding: 0px 0 25px 0;
 }
 
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
 .g-pass{
     display: block;
     width: 320px;
@@ -28,7 +37,8 @@ body{
     background: #212121;
     color: #E9E9E9;
     border-radius: 4px;
-    box-shadow: 0px 2px 5px 0px #20C4AE;
+    box-shadow: 0px 2px 5px 0px #000000;
+    margin-bottom: 50px;
 }
 
 .g-pass .head{
@@ -43,8 +53,9 @@ body{
 }
 
 .g-pass .head .title{
-    line-height: 2.5;
-    font-size: 21px;
+    line-height: 2.77;
+    font-size: 19px;
+    font-weight: 700;
 }
 
 .g-pass .content{
@@ -64,7 +75,9 @@ body{
     cursor: pointer;
     text-transform:capitalize;
     float: left;
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.9;
 }
 
 .g-pass .param label:hover{
@@ -83,7 +96,7 @@ body{
     font-size: 15px;
     font-weight: 700;
     text-align: right;
-    font-family: "Source sans pro";
+    font-family: Roboto, "Source sans pro", sans-serif;
     outline: none;
     border-radius: 3px;
     border: none;
@@ -112,7 +125,7 @@ body{
     border-radius: 3px;
     overflow: hidden;
     padding: 10px;
-    font-family: "source sans pro";
+    font-family: Roboto, "source sans pro", sans-serif;
     word-wrap: break-word;
     overflow-y: scroll;
     border: 2px solid #111;
@@ -129,8 +142,8 @@ body{
    margin: 0 auto;
    margin-top: 10px;
    font-size: 14px;
-   padding: 7px 40px;
-   font-family: "Source sans pro";
+   padding: 13px 100px;
+   font-family: Roboto, "Source sans pro", sans-serif;
    text-transform: uppercase;
    font-weight: 700;
    background: linear-gradient(135deg, #0da591 0%, #08ea95 100%);
@@ -139,7 +152,7 @@ body{
    cursor: pointer;
    color: #111;
    transition: all 250ms ease;
-   opacity:5
+   opacity: 0.85;
 }
 
 .g-pass .result button:hover{
@@ -190,4 +203,3 @@ body{
 .param.param_chars label{
     float: none;
 }
-
